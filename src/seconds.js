@@ -2,7 +2,7 @@ class Second {
   constructor(dob) {
     this.dob = dob;
     this.current = new Date().getFullYear();
-    // this.dobDate = this.current - this.dob;
+    this.dobDate = this.current - this.dob;
     this.calculatedSeconds = 0;
     // new Date().getTime()
   }
