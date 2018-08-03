@@ -17,7 +17,7 @@ class Second {
   }
 
   mars() {
-    return parseInt(this.calculatedSeconds / 19552320);
+    return parseInt(this.calculatedSeconds / 59287680);
   }
 
 }
