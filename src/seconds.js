@@ -2,17 +2,15 @@ class Second {
   constructor(dob) {
     this.dob = dob;
     this.current = new Date().getFullYear();
+    this.currentUTC = new Date(this.current + '-01-01').getTime()/1000;
     this.dobDate = this.current - this.dob;
-    this.calculatedSeconds = 0;
-    // new Date().getTime()
+    this.dobUTC = new Date(this.dobDate + '-01-01').getTime()/1000;
+    this.calculatedSeconds = (this.currentUTC - this.dobUTC);
   }
 
-  // dobDateCalc() {
-  //   this.dobDate = (this.current - this.dob);
-  // }
-
-  // yearsToSeconds(dob) {
-  //   let birthYear = new Date().getFullYear()-dob;
+  // frog() {
+  //   let shitty = this.currentUTC;
+  //   return shitty.getTime();
   // }
 
 }

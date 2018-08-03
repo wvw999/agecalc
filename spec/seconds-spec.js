@@ -2,17 +2,23 @@ import { Second } from './../src/seconds.js';
 
 describe('Second', function() {
 
-  it('should accept input in form of age in integer format', function () {
-    let newUser = new Second(10);
-    expect(newUser.dob).toEqual(10);
-  })
+  // it('should accept input in form of age in integer format', function () {
+  //   let newUser = new Second(10);
+  //   expect(newUser.dob).toEqual(10);
+  // })
+  //
+  // it('outputs the year user was born using age and current date', function () {
+  //   let newUser = new Second(10);
+  //   expect(newUser.dobDate).toEqual(2008);
+  // })
 
-  it('calculates in seconds the time between the moment the birth data was entered and x years ago', function () {
-    let newUser = new Second(10);
-    console.log("dobdate: " + newUser.dobDate);
-    console.log("dob : " + newUser.dob);
-    console.log("current: " + newUser.current);
-    expect(newUser.dobDate).toEqual(2008);
+  it('calculates seconds for user', function () {
+    let newUser = new Second(1);
+    console.log(newUser.calculatedSeconds);
+    console.log(newUser.currentUTC);
+    console.log(newUser.dobUTC);
+    console.log(newUser.calculatedSeconds);
+    expect(newUser.calculatedSeconds).toEqual(31449600);
   })
 
   // * Spec : allows user to input date of birth, input 09/30/1925, output 09/30/1925.
@@ -27,5 +33,9 @@ describe('Second', function() {
   // * Spec : using seconds data calculate venus years time remaining based on average usa lifespan of 2483144640 seconds, input 7568640 seconds, output 127 venus years.
   // * Spec : using seconds data calculate mars years time remaining based on average usa lifespan of 2483144640 seconds, input 7568640 seconds, output 41 mars years.
   // * Spec : using seconds data calculate jupiter years time remaining based on average usa lifespan of 2483144640 seconds, input 7568640 seconds, output 6 jupiter years.
+  // console.log("dobdate: " + newUser.dobDate);
+  // console.log("dob : " + newUser.dob);
+  // console.log("current: " + newUser.current);
+
 
 })
