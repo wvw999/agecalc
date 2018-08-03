@@ -41,21 +41,24 @@ describe('Second', function() {
   //   expect(newUser.jupiter()).toEqual(1);
   // })
 
-  it('time left should be 2483144640 - calculatedSeconds', function () {
+  // it('time left should be 2483144640 - calculatedSeconds', function () {
+  //   let newUser = new Second(10);
+  //   expect(newUser.remaining()).toEqual(2167525440);
+  // })
+
+
+  // * Spec : using seconds data if time remaining < 0 then return 'bonus' time amount, input 2483144660 seconds, output 20 seconds.
+  // skipping this spec, it is a UI function- if the returned number from the previous spec is a negative number, display "bonus time" instead of "time left"
+
+  it('time left for mercury should be remaining / 7568640', function () {
     let newUser = new Second(10);
-    expect(newUser.remaining()).toEqual(1);
+    expect(newUser.mercuryRemaining()).toEqual(1);
   })
 
-
-  // * Spec : using seconds data calculate time remaining based on average usa lifespan of 2483144640 seconds, input 2483144639 seconds, output 1 second.
-  // * Spec : using seconds data if time remaining < 0 then return 'bonus' time amount, input 2483144660 seconds, output 20 seconds.
   // * Spec : using seconds data calculate mercury years time remaining based on average usa lifespan of 2483144640 seconds, input 7568640 seconds, output 328 mercury years.
   // * Spec : using seconds data calculate venus years time remaining based on average usa lifespan of 2483144640 seconds, input 7568640 seconds, output 127 venus years.
   // * Spec : using seconds data calculate mars years time remaining based on average usa lifespan of 2483144640 seconds, input 7568640 seconds, output 41 mars years.
   // * Spec : using seconds data calculate jupiter years time remaining based on average usa lifespan of 2483144640 seconds, input 7568640 seconds, output 6 jupiter years.
-  // console.log("dobdate: " + newUser.dobDate);
-  // console.log("dob : " + newUser.dob);
-  // console.log("current: " + newUser.current);
 
 
 })

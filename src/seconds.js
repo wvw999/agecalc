@@ -28,6 +28,10 @@ class Second {
     return parseInt(2483144640 - this.calculatedSeconds);
   }
 
+  mercuryRemaining() {
+    return parseInt((2483144640 - this.calculatedSeconds) / 7568640);
+  }
+
 }
 
 export { Second }
