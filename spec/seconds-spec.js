@@ -23,7 +23,7 @@ describe('Second', function() {
 
   it('mercury years output', function () {
     let newUser = new Second(1);
-    expect(newUser.mercury).toEqual(4);
+    expect(newUser.mercury()).toEqual(4);
   })
 
   // * Spec : using seconds data calculate mercury years, input 7568640 seconds, output 1 mercury year.

@@ -8,6 +8,10 @@ class Second {
     this.calculatedSeconds = (this.currentUTC - this.dobUTC);
   }
 
+  mercury() {
+    return parseInt(this.calculatedSeconds / 7568640);
+  }
+
 }
 
 export { Second }
