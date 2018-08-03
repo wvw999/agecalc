@@ -30,20 +30,23 @@ describe('Second', function() {
   //   let newUser = new Second(2);
   //   expect(newUser.venus()).toEqual(3);
   // })
+  //
+  // it('mars years output', function () {
+  //   let newUser = new Second(10);
+  //   expect(newUser.mars()).toEqual(5);
+  // })
 
-  it('mars years output', function () {
+  // it('jupiter years output', function () {
+  //   let newUser = new Second(13);
+  //   expect(newUser.jupiter()).toEqual(1);
+  // })
+
+  it('time left should be 2483144640 - calculatedSeconds', function () {
     let newUser = new Second(10);
-    expect(newUser.mars()).toEqual(5);
+    expect(newUser.remaining()).toEqual(1);
   })
 
-  it('jupiter years output', function () {
-    let newUser = new Second(13);
-    expect(newUser.jupiter()).toEqual(1);
-  })
-  // * Spec : using seconds data calculate mercury years, input 7568640 seconds, output 1 mercury year.
-  // * Spec : using seconds data calculate venus years, input 19552320 seconds, output 1 venus year.
-  // * Spec : using seconds data calculate mars years, input 59287680 seconds, output 1 mars year.
-  // * Spec : using seconds data calculate jupiter years, input 374016960 seconds, output 1 jupiter year.
+
   // * Spec : using seconds data calculate time remaining based on average usa lifespan of 2483144640 seconds, input 2483144639 seconds, output 1 second.
   // * Spec : using seconds data if time remaining < 0 then return 'bonus' time amount, input 2483144660 seconds, output 20 seconds.
   // * Spec : using seconds data calculate mercury years time remaining based on average usa lifespan of 2483144640 seconds, input 7568640 seconds, output 328 mercury years.
