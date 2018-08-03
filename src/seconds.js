@@ -37,6 +37,10 @@ class Second {
     return parseInt(this.remaining / 59287680);
   }
 
+  jupiterRemaining() {
+    return parseInt(this.remaining / 374016960);
+  }
+
 }
 
 export { Second }
