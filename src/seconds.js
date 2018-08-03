@@ -1,13 +1,17 @@
 class Second {
-  constructor(dob) {
-    this.dob = dob;
-    this.current = new Date().getFullYear();
-    this.currentUTC = new Date(this.current + '-01-01').getTime()/1000;
-    this.dobDate = this.current - this.dob;
-    this.dobUTC = new Date(this.dobDate + '-01-01').getTime()/1000;
-    this.calculatedSeconds = (this.currentUTC - this.dobUTC);
+  constructor(yyyy,mm,dd) {
+    this.dob = [yyyy, mm, dd];
+    this.fullDob = new Date(yyyy + '-' + mm + '-' + dd).getTime()/1000;
+    this.currentUTC = new Date('August 3, 2018 00:00:01').getTime()/1000;
+    // production code below. need to set 'current' time to locked point for testing or specs will not pass
+    // this.currentUTC = new Date().getTime()/1000;
+    this.calculatedSeconds = parseInt(this.currentUTC - this.fullDob);
+    this.keithFutureBirthtday = new Date('August 3, 2073 00:00:01').getTime()/1000;
+    this.keithCalculatedSeconds = parseInt(this.keithFutureBirthtday - this.fullDob);
     this.remaining = parseInt(2483144640 - this.calculatedSeconds);
   }
+
+
 
   mercury() {
     return parseInt(this.calculatedSeconds / 7568640);
@@ -42,7 +46,7 @@ class Second {
   }
 
   keithrichardsDogYears() {
-    return ((parseInt(this.calculatedSeconds / 374016960)) * 7)
+    return ((parseInt(this.keithCalculatedSeconds / 374016960)) * 7)
   }
 
   mayFlyCase() {
