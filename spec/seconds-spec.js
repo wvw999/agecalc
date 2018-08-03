@@ -71,10 +71,14 @@ describe('Second', function() {
 
   it('keith richards case: 74 + 56 = 130 (age in 2073) in dog jupiter dog years (/374016960 , *7 )', function () {
     let newUser = new Second(130);
-    expect(newUser.keithrichardsDogYears()).toEqual(5);
+    expect(newUser.keithrichardsDogYears()).toEqual(70);
   })
 
-  // * Spec : Return the age Keith Richards will be in dog years on the planet Jupiter in 2073, input 74, output tbd
+  it('mayfly case - 1 mayfly unit = 600 seconds, age of sun in seconds 1.4476251e+17, age of sun in mayfly units = 2.4127085e+14- output result should be (age of sun in mayfly units) divided by (age of user in mayfly units), to be diplayed as ratio 1:xxx,xxx', function () {
+    let newUser = new Second(10);
+    expect(newUser.mayFlyCase()).toEqual(5);
+  })
+
   // * Spec : Assuming that the average lifespan of a mayfly is 5 minutes, determine how many mayfly lifespans a human user has lived and then compare it the current age (in Earth years) of our sun (4.603 billion years), input .000019, output tbd
 
 })

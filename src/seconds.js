@@ -45,6 +45,10 @@ class Second {
     return ((parseInt(this.calculatedSeconds / 374016960)) * 7)
   }
 
+  mayFlyCase() {
+    return parseInt(241270850000000 / (parseInt(this.calculatedSeconds / 600)))
+  }
+
 }
 
 export { Second }
