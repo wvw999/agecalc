@@ -12,17 +12,20 @@ describe('Second', function() {
   //   expect(newUser.dobDate).toEqual(2008);
   // })
 
-  it('calculates seconds for user', function () {
+  // it('calculates seconds for user', function () {
+  //   let newUser = new Second(1);
+  //   console.log(newUser.calculatedSeconds);
+  //   console.log(newUser.currentUTC);
+  //   console.log(newUser.dobUTC);
+  //   console.log(newUser.calculatedSeconds);
+  //   expect(newUser.calculatedSeconds).toEqual(31536000);
+  // })
+
+  it('mercury years output', function () {
     let newUser = new Second(1);
-    console.log(newUser.calculatedSeconds);
-    console.log(newUser.currentUTC);
-    console.log(newUser.dobUTC);
-    console.log(newUser.calculatedSeconds);
-    expect(newUser.calculatedSeconds).toEqual(31536000);
+    expect(newUser.mercury).toEqual(4);
   })
 
-  // * Spec : allows user to input date of birth, input 09/30/1925, output 09/30/1925.
-  // * Spec : calculates in seconds the time between the moment the birth data was entered and birth date/time , input ^^ + current time of 09/31/1925, output 86400 seconds.
   // * Spec : using seconds data calculate mercury years, input 7568640 seconds, output 1 mercury year.
   // * Spec : using seconds data calculate venus years, input 19552320 seconds, output 1 venus year.
   // * Spec : using seconds data calculate mars years, input 59287680 seconds, output 1 mars year.

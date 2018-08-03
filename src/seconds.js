@@ -8,11 +8,6 @@ class Second {
     this.calculatedSeconds = (this.currentUTC - this.dobUTC);
   }
 
-  // frog() {
-  //   let shitty = this.currentUTC;
-  //   return shitty.getTime();
-  // }
-
 }
 
 export { Second }
