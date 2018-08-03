@@ -18,7 +18,7 @@ describe('Second', function() {
     console.log(newUser.currentUTC);
     console.log(newUser.dobUTC);
     console.log(newUser.calculatedSeconds);
-    expect(newUser.calculatedSeconds).toEqual(31449600);
+    expect(newUser.calculatedSeconds).toEqual(31536000);
   })
 
   // * Spec : allows user to input date of birth, input 09/30/1925, output 09/30/1925.
