@@ -25,16 +25,16 @@ class Second {
     return parseInt(this.calculatedSeconds / 374016960);
   }
 
-  // remaining() {
-  //   return parseInt(2483144640 - this.calculatedSeconds);
-  // }
-
   mercuryRemaining() {
     return parseInt(this.remaining / 7568640);
   }
 
   venusRemaining() {
     return parseInt(this.remaining / 19552320);
+  }
+
+  marsRemaining() {
+    return parseInt(this.remaining / 59287680);
   }
 
 }

@@ -54,11 +54,21 @@ describe('Second', function() {
   //   let newUser = new Second(10);
   //   expect(newUser.mercuryRemaining()).toEqual(286);
   // })
+  //
+  // it('time left for venus should be remaining / 19552320', function () {
+  //   let newUser = new Second(10);
+  //   expect(newUser.venusRemaining()).toEqual(110);
+  // })
 
-  it('time left for venus should be remaining / 19552320', function () {
+  it('time left for mars should be remaining / 59287680', function () {
     let newUser = new Second(10);
-    expect(newUser.venusRemaining()).toEqual(110);
+    expect(newUser.marsRemaining()).toEqual(110);
   })
+
+  // it('time left for jupiter should be remaining / 374016960', function () {
+  //   let newUser = new Second(10);
+  //   expect(newUser.jupiterRemaining()).toEqual(110);
+  // })
 
   // * Spec : using seconds data calculate mercury years time remaining based on average usa lifespan of 2483144640 seconds, input 7568640 seconds, output 328 mercury years.
   // * Spec : using seconds data calculate venus years time remaining based on average usa lifespan of 2483144640 seconds, input 7568640 seconds, output 127 venus years.
