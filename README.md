@@ -51,6 +51,8 @@
   * Spec : using seconds data calculate venus years time remaining based on average usa lifespan of 2483144640 seconds, input 7568640 seconds, output 127 venus years.
   * Spec : using seconds data calculate mars years time remaining based on average usa lifespan of 2483144640 seconds, input 7568640 seconds, output 41 mars years.
   * Spec : using seconds data calculate jupiter years time remaining based on average usa lifespan of 2483144640 seconds, input 7568640 seconds, output 6 jupiter years.
+  * Spec : Return the age Keith Richards will be in dog years on the planet Jupiter in 2073, input 74, output tbd
+  * Spec : Assuming that the average lifespan of a mayfly is 5 minutes, determine how many mayfly lifespans a human user has lived and then compare it the current age (in Earth years) of our sun (4.603 billion years), input .000019, output tbd
 
 3. Integration
   * tbd

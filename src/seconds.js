@@ -41,6 +41,10 @@ class Second {
     return parseInt(this.remaining / 374016960);
   }
 
+  keithrichardsDogYears() {
+    return ((parseInt(this.calculatedSeconds / 374016960)) * 7)
+  }
+
 }
 
 export { Second }
