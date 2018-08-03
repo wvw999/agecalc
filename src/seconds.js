@@ -13,7 +13,7 @@ class Second {
   }
 
   venus() {
-    return parseInt(this.calculatedSeconds / 7568640);
+    return parseInt(this.calculatedSeconds / 19552320);
   }
 
 }
