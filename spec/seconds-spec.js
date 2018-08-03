@@ -26,6 +26,11 @@ describe('Second', function() {
     expect(newUser.mercury()).toEqual(4);
   })
 
+  it('venus years output', function () {
+    let newUser = new Second(2);
+    expect(newUser.venus()).toEqual(3);
+  })
+
   // * Spec : using seconds data calculate mercury years, input 7568640 seconds, output 1 mercury year.
   // * Spec : using seconds data calculate venus years, input 19552320 seconds, output 1 venus year.
   // * Spec : using seconds data calculate mars years, input 59287680 seconds, output 1 mars year.

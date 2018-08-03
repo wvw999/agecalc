@@ -12,6 +12,10 @@ class Second {
     return parseInt(this.calculatedSeconds / 7568640);
   }
 
+  venus() {
+    return parseInt(this.calculatedSeconds / 7568640);
+  }
+
 }
 
 export { Second }
