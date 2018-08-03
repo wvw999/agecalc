@@ -21,19 +21,24 @@ describe('Second', function() {
   //   expect(newUser.calculatedSeconds).toEqual(31536000);
   // })
 
-  it('mercury years output', function () {
-    let newUser = new Second(1);
-    expect(newUser.mercury()).toEqual(4);
-  })
-
-  it('venus years output', function () {
-    let newUser = new Second(2);
-    expect(newUser.venus()).toEqual(3);
-  })
+  // it('mercury years output', function () {
+  //   let newUser = new Second(1);
+  //   expect(newUser.mercury()).toEqual(4);
+  // })
+  //
+  // it('venus years output', function () {
+  //   let newUser = new Second(2);
+  //   expect(newUser.venus()).toEqual(3);
+  // })
 
   it('mars years output', function () {
     let newUser = new Second(10);
     expect(newUser.mars()).toEqual(5);
+  })
+
+  it('jupiter years output', function () {
+    let newUser = new Second(13);
+    expect(newUser.jupiter()).toEqual(5);
   })
   // * Spec : using seconds data calculate mercury years, input 7568640 seconds, output 1 mercury year.
   // * Spec : using seconds data calculate venus years, input 19552320 seconds, output 1 venus year.

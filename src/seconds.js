@@ -20,6 +20,10 @@ class Second {
     return parseInt(this.calculatedSeconds / 59287680);
   }
 
+  jupiter() {
+    return parseInt(this.calculatedSeconds / 374016960);
+  }
+
 }
 
 export { Second }
