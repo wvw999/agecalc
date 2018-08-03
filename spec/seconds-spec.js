@@ -62,7 +62,7 @@ describe('Second', function() {
 
   it('time left for mars should be remaining / 59287680', function () {
     let newUser = new Second(10);
-    expect(newUser.marsRemaining()).toEqual(110);
+    expect(newUser.marsRemaining()).toEqual(36);
   })
 
   // it('time left for jupiter should be remaining / 374016960', function () {
