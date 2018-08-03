@@ -16,6 +16,10 @@ class Second {
     return parseInt(this.calculatedSeconds / 19552320);
   }
 
+  mars() {
+    return parseInt(this.calculatedSeconds / 19552320);
+  }
+
 }
 
 export { Second }
