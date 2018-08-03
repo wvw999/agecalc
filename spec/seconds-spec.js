@@ -43,16 +43,21 @@ describe('Second', function() {
 
   // it('time left should be 2483144640 - calculatedSeconds', function () {
   //   let newUser = new Second(10);
-  //   expect(newUser.remaining()).toEqual(2167525440);
+  //   expect(newUser.remaining).toEqual(2167525440);
   // })
 
 
   // * Spec : using seconds data if time remaining < 0 then return 'bonus' time amount, input 2483144660 seconds, output 20 seconds.
   // skipping this spec, it is a UI function- if the returned number from the previous spec is a negative number, display "bonus time" instead of "time left"
 
-  it('time left for mercury should be remaining / 7568640', function () {
+  // it('time left for mercury should be remaining / 7568640', function () {
+  //   let newUser = new Second(10);
+  //   expect(newUser.mercuryRemaining()).toEqual(286);
+  // })
+
+  it('time left for venus should be remaining / 19552320', function () {
     let newUser = new Second(10);
-    expect(newUser.mercuryRemaining()).toEqual(1);
+    expect(newUser.venusRemaining()).toEqual(286);
   })
 
   // * Spec : using seconds data calculate mercury years time remaining based on average usa lifespan of 2483144640 seconds, input 7568640 seconds, output 328 mercury years.

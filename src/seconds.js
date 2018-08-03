@@ -6,6 +6,7 @@ class Second {
     this.dobDate = this.current - this.dob;
     this.dobUTC = new Date(this.dobDate + '-01-01').getTime()/1000;
     this.calculatedSeconds = (this.currentUTC - this.dobUTC);
+    this.remaining = parseInt(2483144640 - this.calculatedSeconds);
   }
 
   mercury() {
@@ -24,12 +25,16 @@ class Second {
     return parseInt(this.calculatedSeconds / 374016960);
   }
 
-  remaining() {
-    return parseInt(2483144640 - this.calculatedSeconds);
-  }
+  // remaining() {
+  //   return parseInt(2483144640 - this.calculatedSeconds);
+  // }
 
   mercuryRemaining() {
-    return parseInt((2483144640 - this.calculatedSeconds) / 7568640);
+    return parseInt(this.remaining / 7568640);
+  }
+
+  venusRemaining() {
+    return parseInt(this.remaining / 19552320);
   }
 
 }
