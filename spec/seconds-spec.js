@@ -57,7 +57,7 @@ describe('Second', function() {
 
   it('time left for venus should be remaining / 19552320', function () {
     let newUser = new Second(10);
-    expect(newUser.venusRemaining()).toEqual(286);
+    expect(newUser.venusRemaining()).toEqual(110);
   })
 
   // * Spec : using seconds data calculate mercury years time remaining based on average usa lifespan of 2483144640 seconds, input 7568640 seconds, output 328 mercury years.
